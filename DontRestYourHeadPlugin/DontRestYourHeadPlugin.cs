@@ -100,29 +100,29 @@ namespace DontRestYourHeadPlugin
                 if (highest > d)
                 {
                     discipline.Clear();
-                    d = -1;
+                    d = short.MinValue;
                 }
 
                 if (highest > m)
                 {
                     madness.Clear();
-                    m = -1;
+                    m = short.MinValue;
                 }
 
                 if (highest > e)
                 {
                     exhaustion.Clear();
-                    e = -1;
+                    e = short.MinValue;
                 }
 
-                if (d > 0 && m == -1 && e == -1)
+                if (d > 0 && m == short.MinValue && e == short.MinValue)
                 {
                     dom = "Discipline";
-                } else if (m > 0 && d == -1 && e == -1)
+                } else if (m > 0 && d == short.MinValue && e == short.MinValue)
                 {
                     dom = "Madness";
                 }
-                else if (e > 0 && d == -1 && m == -1)
+                else if (e > 0 && d == short.MinValue && m == short.MinValue)
                 {
                     dom = "Exhaustion";
                 }

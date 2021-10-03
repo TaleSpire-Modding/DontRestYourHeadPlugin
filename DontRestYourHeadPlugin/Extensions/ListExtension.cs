@@ -10,7 +10,7 @@ namespace DontRestYourHeadPlugin.Extensions
     {
         public static int PopHighest(this List<short> list)
         {
-            short o = -1;
+            short o = short.MinValue;
             foreach (var val in list)
             {
                 if (val > o) o = val;
