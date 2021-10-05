@@ -30,7 +30,7 @@ namespace DontRestYourHeadPlugin
             ModdingUtils.Initialize(this, Logger);
             RadialUIPlugin.AddOnRemoveCharacter(Guid,"Enable Torch",ShouldHide);
             
-            RadialUIPlugin.AddOnCharacter(Guid,new MapMenu.ItemArgs
+            RadialUIPlugin.AddCustomCharacterSubmenuStat(Guid,new MapMenu.ItemArgs
             {
                 Action = AttackAdv,
                 Title = "Roll for Madness",
