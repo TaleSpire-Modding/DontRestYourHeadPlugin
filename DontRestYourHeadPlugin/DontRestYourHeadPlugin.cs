@@ -19,7 +19,7 @@ namespace DontRestYourHeadPlugin
     {
         // constants
         public const string Guid = "org.hollofox.plugins.DontRestYourHead";
-        private const string Version = "1.0.0.0";
+        private const string Version = "1.0.1.0";
 
         /// <summary>
         /// Awake plugin
